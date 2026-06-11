@@ -1,0 +1,14 @@
+[package]
+name = "kobold-cloud"
+version = "0.1.0"
+edition = "2021"
+description = "Cloud integration adapters: Kafka, AWS Glue/Lambda/S3, Snowflake, and Databricks export for decoded COBOL data."
+authors = ["infinityabundance"]
+license = "Apache-2.0"
+repository = "https://github.com/infinityabundance/kobold-cloud"
+readme = "README.md"
+publish = false  # empty scaffold; flip to publishable once the implementation lands
+
+[dependencies]
+# Dependency rule: kobold-* MAY depend on gnucobol-rs; gnucobol-rs MUST NOT depend on kobold-*.
+# Activate when the implementation is extracted, e.g.: gnucobol-rs = "0.7"
